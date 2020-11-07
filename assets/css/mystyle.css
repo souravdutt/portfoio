@@ -1,0 +1,105 @@
+.proj_img{
+	width:100%;
+    height:300px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #000000;
+    transition: .4s;
+}
+.proj_img:hover{
+    box-shadow: 0 0 10px #000000;
+    transform: scale3d(1.06, 1.06, 1.06);
+}
+.lms_proj{
+	background: #424242 url(../../images/lms.jpg) center no-repeat;
+	background-size: cover;
+}
+.lms_proj:hover{
+	background: #424242 url(../../images/lms.gif) center no-repeat;
+	background-size: cover;
+}
+.comp_proj{
+	background: #424242 url(../../images/comp.jpg) center no-repeat;
+	background-size: cover;
+}
+.comp_proj:hover{
+	background: #424242 url(../../images/comp.gif) center no-repeat;
+	background-size: cover;
+}
+.fee_proj{
+	background: #424242 url(../../images/fee.jpg) center no-repeat;
+	background-size: cover;
+}
+.fee_proj:hover{
+	background: #424242 url(../../images/fee.gif) center no-repeat;
+	background-size: cover;
+}
+.ecom_proj{
+	background: #424242 url(../../images/ecom.jpg) center no-repeat;
+	background-size: cover;
+}
+.ecom_proj:hover{
+	background: #424242 url(../../images/ecom.gif) center no-repeat;
+	background-size: cover;
+}
+.land_proj{
+	background: #424242 url(../../images/land.jpg) center no-repeat;
+	background-size: cover;
+}
+.land_proj:hover{
+	background: #424242 url(../../images/land.gif) center no-repeat;
+	background-size: cover;
+}
+.psdhtml_proj{
+	background: #424242 url(../../images/psdhtml.jpg) center no-repeat;
+	background-size: cover;
+}
+.psdhtml_proj:hover{
+	background: #424242 url(../../images/psdhtml.gif) center no-repeat;
+	background-size: cover;
+}
+@media screen and (max-width: 1680px) {
+
+    .proj_img{
+        height:250px;
+    }
+    
+}
+
+@media screen and (max-width: 1280px) {
+
+    .proj_img{
+        height:200px;
+    }
+
+}
+@media screen and (max-width: 980px) {
+
+    .proj_img{
+        height:175px;
+    }
+
+}
+@media screen and (max-width: 800px) {
+
+    .proj_img{
+        height:150px;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    .proj_img{
+        height:200px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .proj_img{
+        height:150px;
+    }
+
+}
+
