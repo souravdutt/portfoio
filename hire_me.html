@@ -142,7 +142,7 @@
 					var form = $("#contact_form");
 					form.on("submit", function(e){
 						e.preventDefault();
-						form = $("#contact_form")[];
+						form = form[0];
 						var name = $("#name").val();
 						var email = $("#email").val();
 						var mobile = $("#mobile").val();
