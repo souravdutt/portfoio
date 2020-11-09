@@ -2338,6 +2338,8 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="mobile"],
+	input[type="number"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -2383,6 +2385,8 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="mobile"],
+	input[type="number"],
 	select {
 		height: 3rem;
 	}
@@ -2485,6 +2489,8 @@ input, select, textarea {
 
 	input[type="text"],
 	input[type="password"],
+	input[type="mobile"],
+	input[type="number"],
 	input[type="email"],
 	select,
 	textarea {
