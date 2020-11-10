@@ -150,8 +150,9 @@
 						var message = $("#message").val();
 						
 						if(name != '' && email != '' && category != '' && message != ''){
-							var data = form.serialize();
+							var data = $("contact_form").serialize();
 							$("#send").prop("disabled", true);
+							$("#send").attr("value", "Sending Message..");
 							$ajax({
 								type: "POST",
 								url: "https://formspree.io/f/xdopzqaa",
@@ -159,10 +160,12 @@
 								success: function(){
 									alert("Congrats, message sent. I'll catch you as early as possible.");
 									$("#send").prop("disabled", false);
+							                $("#send").attr("value", "Send Message");
 								},
 								error: function(){
 									alert("Oops! Something went wrong. Please try later.");
 									$("#send").prop("disabled", false);
+							                $("#send").attr("value", "Send Message");
 								}
 							});
 						}else{
