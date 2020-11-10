@@ -150,7 +150,7 @@
 						var message = $("#message").val();
 						
 						if(name != '' && email != '' && category != '' && message != ''){
-							var data = $("contact_form").serialize();
+							var data = $("#contact_form").serialize();
 							$("#send").prop("disabled", true);
 							$("#send").attr("value", "Sending Message..");
 							$.ajax({
