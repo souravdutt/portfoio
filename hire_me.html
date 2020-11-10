@@ -164,7 +164,8 @@
 							                $("#send").attr("value", "Send Message");
 								},
 								error: function(reply){
-									alert("Oops! Something went wrong. Please try later. "+reply);
+									alert("Oops! Something went wrong. Please try later. ");
+									console.log(reply);
 									$("#send").prop("disabled", false);
 							                $("#send").attr("value", "Send Message");
 								}
