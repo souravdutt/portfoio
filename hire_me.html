@@ -162,6 +162,11 @@
 									alert("Congrats, message sent. I'll catch you as early as possible.");
 									$("#send").prop("disabled", false);
 							                $("#send").attr("value", "Send Message");
+									name = $("#name").val('');
+									email = $("#email").val('');
+									mobile = $("#mobile").val('');
+									category = $("#category").val('');
+									message = $("#message").val('');
 								},
 								error: function(reply){
 									alert("Oops! Something went wrong. Please try later. ");
