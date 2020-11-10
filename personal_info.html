@@ -129,7 +129,7 @@
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" id="send" value="Send Message" /></li>
 								</ul>
 							</form>
 						</section>
@@ -178,6 +178,68 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				$(document).ready(function(){
+					var form = $("#contact_form");
+					form.on("submit", function(e){
+						e.preventDefault();
+						
+						var name = $("#name").val();
+						var email = $("#email").val();
+						var mobile = $("#mobile").val();
+						var category = $("#category").val();
+						var message = $("#message").val();
+						
+						if(name != '' && email != '' && category != '' && message != ''){
+							var data = $("#contact_form").serialize();
+							$("#send").prop("disabled", true);
+							$("#send").attr("value", "Sending Message..");
+							$.ajax({
+								type: "POST",
+								url: "https://formspree.io/f/xdopzqaa",
+								data: data,
+							        dataType: "json",
+								success: function(){
+									alert("Congrats, message sent. I'll catch you as early as possible.");
+									$("#send").prop("disabled", false);
+							                $("#send").attr("value", "Send Message");
+									name = $("#name").val('');
+									email = $("#email").val('');
+									mobile = $("#mobile").val('');
+									category = $("#category").val('');
+									message = $("#message").val('');
+								},
+								error: function(reply){
+									alert("Oops! Something went wrong. Please try later. ");
+									console.log(reply);
+									$("#send").prop("disabled", false);
+							                $("#send").attr("value", "Send Message");
+								}
+							});
+						}else{
+							if(name == ''){
+								alert("Please enter your name.");
+								$("#name").focus();
+							}
+							else if(email == ''){
+								alert("Please enter your email address.");
+								$("#email").focus();
+							}
+							else if(category == ''){
+								alert("Please select your profession.");
+								$("#category").focus();
+							}
+							else if(message == ''){
+								alert("Please enter your Message for me.");
+								$("#message").focus();
+							}
+							else{
+								alert("Sorry! something went wrong, please try again later.");
+							}
+						}
+					});
+					
+				});
+			</script>
 	</body>
 </html>
