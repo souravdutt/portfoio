@@ -153,7 +153,7 @@
 							var data = $("contact_form").serialize();
 							$("#send").prop("disabled", true);
 							$("#send").attr("value", "Sending Message..");
-							$ajax({
+							$.ajax({
 								type: "POST",
 								url: "https://formspree.io/f/xdopzqaa",
 								data: data,
