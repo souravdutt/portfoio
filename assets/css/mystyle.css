@@ -13,7 +13,7 @@
 	background: #424242 url(../../images/lms.jpg) center no-repeat;
 	background-size: cover;
 }
-.lms_proj:hover{
+.lms_proj:hover, .lms_proj:active{
 	background: #424242 url(../../images/lms.gif) center no-repeat;
 	background-size: cover;
 }
@@ -21,7 +21,7 @@
 	background: #424242 url(../../images/comp.jpg) center no-repeat;
 	background-size: cover;
 }
-.comp_proj:hover{
+.comp_proj:hover, .comp_proj:active{
 	background: #424242 url(../../images/comp.gif) center no-repeat;
 	background-size: cover;
 }
@@ -29,7 +29,7 @@
 	background: #424242 url(../../images/fee.jpg) center no-repeat;
 	background-size: cover;
 }
-.fee_proj:hover{
+.fee_proj:hover, .fee_proj:active{
 	background: #424242 url(../../images/fee.gif) center no-repeat;
 	background-size: cover;
 }
@@ -37,7 +37,7 @@
 	background: #424242 url(../../images/ecom.jpg) center no-repeat;
 	background-size: cover;
 }
-.ecom_proj:hover{
+.ecom_proj:hover, .ecom_proj:active{
 	background: #424242 url(../../images/ecom.gif) center no-repeat;
 	background-size: cover;
 }
@@ -45,7 +45,7 @@
 	background: #424242 url(../../images/land.jpg) center no-repeat;
 	background-size: cover;
 }
-.land_proj:hover{
+.land_proj:hover, .land_proj:active{
 	background: #424242 url(../../images/land.gif) center no-repeat;
 	background-size: cover;
 }
@@ -53,7 +53,7 @@
 	background: #424242 url(../../images/psdhtml.jpg) center no-repeat;
 	background-size: cover;
 }
-.psdhtml_proj:hover{
+.psdhtml_proj:hover, .psdhtml_proj:active{
 	background: #424242 url(../../images/psdhtml.gif) center no-repeat;
 	background-size: cover;
 }
