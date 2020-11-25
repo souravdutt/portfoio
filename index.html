@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Sourav Dutt-Web Developer</title>
+		<title>Sourav Dutt | Web Developer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -19,15 +19,81 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
-
 				<!-- Intro -->
 					<div id="intro">
 						<p class="hey">Hey, I am</p>
 						<img src="images/logo-transparent.png" width="100px" alt="logo-SouravDutt">
 						<h1>Sourav Dutt</h1>
-						<p>
-							&horbar; <span style="font-weight: 700; font-size: 120%;">A Full Stack Web Developer</span> &horbar;<br />
-						</p>
+						<div class="typewrite"data-period="1500" data-type='[ "&horbar; A Full Stack Web Developer &horbar;", "I Love to Develop Web Apps :&RightAngleBracket;", "My Skills: PHP, MySQL, JQuery, Ajax, Bootstrap, Wordpress...", "I Love Design." ]' >
+							<span class="wrap"></span><br />
+						</div>	
+						<style>
+							.typewrite{
+								margin: 0 0 30px 0;
+								letter-spacing: 0.1em;
+								font-weight: 700;
+								font-size: 135%;
+							}
+						</style>
+						<script>
+							var TxtType = function(el, toRotate, period) {
+								this.toRotate = toRotate;
+								this.el = el;
+								this.loopNum = 0;
+								this.period = parseInt(period, 10) || 1500;
+								this.txt = '';
+								this.tick();
+								this.isDeleting = false;
+							};
+
+							TxtType.prototype.tick = function() {
+								var i = this.loopNum % this.toRotate.length;
+								var fullTxt = this.toRotate[i];
+
+								if (this.isDeleting) {
+								this.txt = fullTxt.substring(0, this.txt.length - 1);
+								} else {
+								this.txt = fullTxt.substring(0, this.txt.length + 1);
+								}
+
+								this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+								var that = this;
+								var delta = 200 - Math.random() * 100;
+
+								if (this.isDeleting) { delta /= 2; }
+
+								if (!this.isDeleting && this.txt === fullTxt) {
+								delta = this.period;
+								this.isDeleting = true;
+								} else if (this.isDeleting && this.txt === '') {
+								this.isDeleting = false;
+								this.loopNum++;
+								delta = 500;
+								}
+
+								setTimeout(function() {
+								that.tick();
+								}, delta);
+							};
+
+							window.onload = function() {
+								var elements = document.getElementsByClassName('typewrite');
+								for (var i=0; i<elements.length; i++) {
+									var toRotate = elements[i].getAttribute('data-type');
+									var period = elements[i].getAttribute('data-period');
+									if (toRotate) {
+									new TxtType(elements[i], JSON.parse(toRotate), period);
+									}
+								}
+								// INJECT CSS
+								var css = document.createElement("style");
+								css.type = "text/css";
+								css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+								document.body.appendChild(css);
+							};
+
+						</script>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -73,23 +139,23 @@
 								<article>
 									<header>
 										<span class="date">August 2020</span>
-										<h2><a href="#">LMS from Scratch</a></h2>
+										<h2><a href="learning_management_system_lms.html">LMS from Scratch</a></h2>
 									</header>
 									<div class="image fit proj_img lms_proj"></div>
 									<p>Developed a Learning Management System using Vanilla PHP, MySQL, JQuery, Ajax and Bootstrap. The user interface is completely responsive, neat and clean...</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Read More</a></li>
+										<li><a href="learning_management_system_lms.html" class="button">Read More</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
 										<span class="date">March 2020</span>
-										<h2><a href="#">Helpline Directory</a></h2>
+										<h2><a href="helpline_complaint_directory_php.html">Helpline Directory</a></h2>
 									</header>
 									<div class="image fit proj_img comp_proj"></div>
 									<p>Developed an open source helpline platform, where anyone can find contact number/ email/ social links of any private/government department like colleges, hospitals...</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Read More</a></li>
+										<li><a href="helpline_complaint_directory_php.html" class="button btn_pending">Read More</a></li>
 									</ul>
 								</article>
 								<article>
@@ -100,7 +166,7 @@
 									<div class="image fit proj_img fee_proj"></div>
 									<p>Created a Fee Receipt System for educational institute. Where institute can mantaine fee record in database and track annual fee record of each student...</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Read More</a></li>
+										<li><a href="#" class="button btn_pending">Read More</a></li>
 									</ul>
 								</article>
 								<article>
@@ -111,7 +177,7 @@
 									<div class="image fit proj_img ecom_proj"></div>
 									<p>Developed an E-commerce Website for a my client using Wordpress with Elementor and woo-commerce. The client was a final year student who need this for his project...</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Read More</a></li>
+										<li><a href="#" class="button btn_pending">Read More</a></li>
 									</ul>
 								</article>
 								<article>
@@ -122,7 +188,7 @@
 									<div class="image fit proj_img land_proj"></div>
 									<p>Created a Fee Receipt System for educational institute. Where institute can mantaine fee record in database and track annual fee record of each student...</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Read More</a></li>
+										<li><a href="#" class="button btn_pending">Read More</a></li>
 									</ul>
 								</article>
 								<article>
@@ -133,7 +199,7 @@
 									<div class="image fit proj_img psdhtml_proj"></div>
 									<p>Converted several PSD files into HTML Format using HTML5, CSS3 and Bootstrap with 99% of pixel to pixel accuracy....</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Read More</a></li>
+										<li><a href="#" class="button btn_pending">Read More</a></li>
 									</ul>
 								</article>
 							</section>
@@ -169,7 +235,7 @@
 									</div>
 									<div class="field">
 										<label for="mobile">Whatsapp Number <small style="font-size:80%;">(Optional)</small></label>
-										<input type="text" name="mobile" id="mobile" />
+										<input type="mobile" name="mobile" id="mobile" />
 									</div>
 									<div class="field">
 										<label for="category">Profession</label>
@@ -238,6 +304,54 @@
 			<script src="assets/js/main.js"></script>
 			<script>
 				$(document).ready(function(){
+					$('.btn_pending').on('click', function(e){
+						e.preventDefault();
+						alert('More Details Coming Soon, Stay Tuned!')
+					});
+					// Add smooth scrolling to all links
+					$("a").on('click', function(event) {
+
+						// Make sure this.hash has a value before overriding default behavior
+						if (this.hash !== "") {
+						// Prevent default anchor click behavior
+						event.preventDefault();
+
+						// Store hash
+						var hash = this.hash;
+
+						// Using jQuery's animate() method to add smooth page scroll
+						// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+						$('html, body').animate({
+							scrollTop: $(hash).offset().top
+						}, 800, function(){
+					
+							// Add hash (#) to URL when done scrolling (default click behavior)
+							window.location.hash = hash;
+						});
+						} // End if
+					});
+
+
+					$("#mobile").keydown(function(event) {
+					k = event.which;
+					if ((k >= 96 && k <= 105) || k == 8) {
+						if ($(this).val().length == 10) {
+						if (k == 8) {
+							return true;
+						} else {
+							event.preventDefault();
+							return false;
+
+						}
+						}
+					} else {
+						event.preventDefault();
+						return false;
+					}
+
+					});
+
+
 					var form = $("#contact_form");
 					form.on("submit", function(e){
 						e.preventDefault();

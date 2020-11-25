@@ -57,6 +57,12 @@
 	background: #424242 url(../../images/psdhtml.gif) center no-repeat;
 	background-size: cover;
 }
+.yt-embed iframe{
+	box-shadow: 0 0 5px rgb(100, 100, 100);
+	width: 100%;
+	height: 450px;
+}
+
 @media screen and (max-width: 1680px) {
 
     .proj_img{
@@ -69,7 +75,10 @@
 
     .proj_img{
         height:200px;
-    }
+	}
+	.yt-embed iframe{
+		height:390px;
+	}
 
 }
 @media screen and (max-width: 980px) {
@@ -77,6 +86,9 @@
     .proj_img{
         height:175px;
     }
+	.yt-embed iframe{
+		height:320px;
+	}
 
 }
 @media screen and (max-width: 800px) {
@@ -84,6 +96,9 @@
     .proj_img{
         height:150px;
     }
+	.yt-embed iframe{
+		height:280px;
+	}
 
 }
 
@@ -92,6 +107,25 @@
     .proj_img{
         height:200px;
     }
+	.yt-embed iframe{
+		height:240px;
+	}
+
+}
+
+@media screen and (max-width: 580px) {
+
+	.yt-embed iframe{
+		height:200px;
+	}
+
+}
+
+@media screen and (max-width: 440px) {
+
+    .yt-embed iframe{
+		height:175px;
+	}
 
 }
 
@@ -100,6 +134,9 @@
     .proj_img{
         height:150px;
     }
+	.yt-embed iframe{
+		height:160px;
+	}
 
 }
 

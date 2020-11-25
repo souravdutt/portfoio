@@ -52,16 +52,20 @@
 									<form id="contact_form" style="padding-top: 0; border:0;">
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall">
+												<label for="name">Your Name<span style="color:rgb(253, 124, 124);font-size:90%;">*</span></label>
 												<input type="text" name="name" id="name" value="" placeholder="Name" />
 											</div>
 											<div class="col-6 col-12-xsmall">
+												<label for="email">Email<span style="color:rgb(253, 124, 124);font-size:90%;">*</span></label>
 												<input type="email" name="email" id="email" value="" placeholder="Email" />
 											</div>
 											<!-- Break -->
 											<div class="col-6 col-12-xsmall">
-												<input type="mobile" name="mobile" id="mobile" value="" placeholder="Mobile (Optional)" />
+												<label for="mobile">Mobile Number</label>
+												<input type="text" name="mobile" id="mobile" value="" placeholder="Mobile (Optional)" />
 											</div>
 											<div class="col-6 col-12-xsmall">
+												<label for="category">Your Profession<span style="color:rgb(253, 124, 124);font-size:90%;">*</span></label>
 												<select name="category" id="category">
 													<option value="">- Your Profession -</option>
 													<option value="Client">Client</option>
@@ -72,6 +76,7 @@
 											</div>
 											<!-- Break -->
 											<div class="col-12">
+												<label for="message">Your Message for Me<span style="color:rgb(253, 124, 124);font-size:90%;">*</span></label>
 												<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
 											</div>
 											<!-- Break -->
@@ -139,6 +144,55 @@
 			<script src="assets/js/main.js"></script>
 			<script>
 				$(document).ready(function(){
+					$("#name").focus();
+				});
+			</script>
+			<script>
+				$(document).ready(function(){
+					// Add smooth scrolling to all links
+					$("a").on('click', function(event) {
+
+						// Make sure this.hash has a value before overriding default behavior
+						if (this.hash !== "") {
+						// Prevent default anchor click behavior
+						event.preventDefault();
+
+						// Store hash
+						var hash = this.hash;
+
+						// Using jQuery's animate() method to add smooth page scroll
+						// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+						$('html, body').animate({
+							scrollTop: $(hash).offset().top
+						}, 800, function(){
+					
+							// Add hash (#) to URL when done scrolling (default click behavior)
+							window.location.hash = hash;
+						});
+						} // End if
+					});
+
+
+					$("#mobile").keydown(function(event) {
+					k = event.which;
+					if ((k >= 96 && k <= 105) || k == 8) {
+						if ($(this).val().length == 10) {
+						if (k == 8) {
+							return true;
+						} else {
+							event.preventDefault();
+							return false;
+
+						}
+						}
+					} else {
+						event.preventDefault();
+						return false;
+					}
+
+					});
+
+
 					var form = $("#contact_form");
 					form.on("submit", function(e){
 						e.preventDefault();
