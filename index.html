@@ -32,7 +32,7 @@
 								margin: 0 0 30px 0;
 								letter-spacing: 0.1em;
 								font-weight: 700;
-								font-size: 135%;
+								font-size: 120%;
 							}
 						</style>
 						<script>
@@ -150,12 +150,12 @@
 								<article>
 									<header>
 										<span class="date">March 2020</span>
-										<h2><a href="#" class="btn_pending">Helpline Directory</a></h2>
+										<h2><a href="helpline_complaint_directory_php.html">Helpline Directory</a></h2>
 									</header>
 									<div class="image fit proj_img comp_proj"></div>
 									<p>Developed an open source helpline platform, where anyone can find contact number/ email/ social links of any private/government department like colleges, hospitals...</p>
 									<ul class="actions special">
-										<li><a href="helpline_complaint_directory_php.html" class="button btn_pending">Read More</a></li>
+										<li><a href="helpline_complaint_directory_php.html" class="button">Read More</a></li>
 									</ul>
 								</article>
 								<article>
@@ -306,29 +306,7 @@
 				$(document).ready(function(){
 					$('.btn_pending').on('click', function(e){
 						e.preventDefault();
-						alert('More Details Coming Soon, Stay Tuned!')
-					});
-					// Add smooth scrolling to all links
-					$("a").on('click', function(event) {
-
-						// Make sure this.hash has a value before overriding default behavior
-						if (this.hash !== "") {
-						// Prevent default anchor click behavior
-						event.preventDefault();
-
-						// Store hash
-						var hash = this.hash;
-
-						// Using jQuery's animate() method to add smooth page scroll
-						// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-						$('html, body').animate({
-							scrollTop: $(hash).offset().top
-						}, 800, function(){
-					
-							// Add hash (#) to URL when done scrolling (default click behavior)
-							window.location.hash = hash;
-						});
-						} // End if
+						alert('More Details Coming Soon! Stay Tuned.')
 					});
 
 

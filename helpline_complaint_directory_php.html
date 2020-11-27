@@ -51,25 +51,24 @@
 								</header>
 								<h3 style="margin:30px 0 0 0;">Description</h3>
 								<p>
-									I've developed this Helpline Directory from scratch. The skill set used for creating this <strong>Learning Management Sysytem (LMS)</strong> is PHP, MySQL, HTML5, CSS3, Bootstrap, JQuery and Ajax. Which is designed and developed by <strong>Soruav Dutt</strong>.<br />
-									It is not a readymade Wordpress LMS. It is created by me from the scratch using Vanilla PHP and SQL.<br />
-									The user interface is clean and completely responsive. Below is a quick introductive video for this Learning Management System. If you need a demo to test this LMS then <a href="#contact_form" class="goto_contact_me">click here</a> to contact me.
+									I've developed this Helpline Directory from the scratch. The skill set used for creating this <strong>Helpline Directory</strong> is PHP, MySQL, JQuery, Ajax, HTML and CSS. Which is designed and developed by me (Soruav Dutt).<br />
+									I developed this as open source project and the main motive behind this project is that sometimes we all face some emergencies and then we need some helpline contacts or other related information about some departments/agencies.<br>
+									There is a huge list of agencies and departments either government or private type whose contact/helpline information is not available on goolge search or at any other online helpline directory platform.
+									So I thought why not to create an plateform for this thing. Using this idea I started developing this web app. Here visitor will search any departement with its name e.g. <i>"Employement Office"</i>
+									or can also search for region/city name to get complete list of departments and offices for that region.<br />
+									The user interface is clean and completely responsive. Below is a quick introductive video for this Helpline Directory. If you need any further information then <a href="#contact_form" class="goto_contact_me">click here</a> to contact me.
 								</p>
 								<div class="image main yt-embed"><iframe src="https://www.youtube.com/embed/4B4_M-OxADc?start=31&showinfo=0" style="margin-bottom: 30px;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 								
-								<h3 style="margin:30px 0 0 0;">Featurs</h3>
+								<h3 style="margin:30px 0 0 0;">Key Featurs</h3>
 								<p>
-									&rightarrow; Any kind of Institute can use this LMS either it is an acadamy/institute or huge college/university.<br/>
-									&rightarrow; Three user interfaces for Admin, Teacher and Students.<br/>
-									&rightarrow; Admin can create courses/classes and subjects for each course.<br/>
-									&rightarrow; Teacher can upload Video or PDF or Image file only for the course and subjects that are alloted to him/her.<br/>
-									&rightarrow; Students can access study material only for his/her course.<br/>
-									&rightarrow; Students can discuss about a topic with other classmates and teachers in comments on a video.<br/>
-									&rightarrow; Students can submit assignments/homework as PDF or Image File and teacher can give them scores.<br/>
-									&rightarrow; Admin can Deactivate/Activate any student or teacher any time if needed.<br/>
+									&rightarrow; Visitors can search with both departement name or region name to get required helpline list.<br/>
+									&rightarrow; Anybody can insert contact detail for any departement. But it'll be listed in search result after approval.<br/>
+									&rightarrow; In case some contact information is not valid or not working then visitors can report it for correction.<br/>
+									&rightarrow; Visitors can check for reviews in comments for each search result.<br/>
 								</p>
 								<p>
-									There are lots of more features, <a href="#contact_form" class="goto_contact_me">Contact Me</a> to discuss and to know more about this LMS Project.
+									There are lots of more features, <a href="#contact_form" class="goto_contact_me">Contact Me</a> to discuss and to know more about this Project.
 								</p>
 								<input type="button" onclick="history.back()" value="&LeftArrow; Go Back">
 							</section>
@@ -162,32 +161,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
-				$(document).on('click', '.ytp-title-text', function(){
-					$('.ytp-title-text').hide();
-				});
 				$(document).ready(function(){
-					// Add smooth scrolling to all links
-					$("a").on('click', function(event) {
-
-						// Make sure this.hash has a value before overriding default behavior
-						if (this.hash !== "") {
-						// Prevent default anchor click behavior
-						event.preventDefault();
-
-						// Store hash
-						var hash = this.hash;
-
-						// Using jQuery's animate() method to add smooth page scroll
-						// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-						$('html, body').animate({
-							scrollTop: $(hash).offset().top
-						}, 600, function(){
-					
-							// Add hash (#) to URL when done scrolling (default click behavior)
-							window.location.hash = hash;
-						});
-						} // End if
-					});
 	  
 					$("#mobile").keydown(function(event) {
 					k = event.which;
