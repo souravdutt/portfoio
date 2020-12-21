@@ -129,7 +129,7 @@ body::-webkit-scrollbar-thumb{
 		float: none!important;
 		margin: 0 auto!important;
 		min-width: 100%!important;
-		max-height: 500px;
+		max-height: 420px;
 		overflow:hidden;
 		border-radius: 50%;
 		background: rgb(224, 224, 224);
