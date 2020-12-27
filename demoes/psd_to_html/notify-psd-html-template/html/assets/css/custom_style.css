@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: calibri, raleway;
+}
+/*--------------------
+| START: TOPBAR AREA |
+-------------------*/
+.top-bar{
+    background: #2ecc71;
+    height:10px;
+}
+/*--------------------
+| END: TOP BAR AREA |
+-------------------*/
+
+/*--------------------
+| START: HEADER AREA |
+-------------------*/
+.header-main{
+    width:100%;
+    min-height:600px;
+    display:flex;
+    background: url(../images/main.png) center no-repeat;
+    background-size: cover;
+}
+.notify-logo{
+    width:183px;
+    height:83px;
+}
+.header-main .header-text{
+    color: #ffffff;
+    font-size: 24px;
+}
+.header-main .icon-container{
+    width: 53px;
+    height: 53px;
+    margin-right: 15px;
+    background: rgba(10, 10, 10, 0.5);
+    transition: .3s;
+    cursor: pointer;
+}
+.header-main .icon-container:hover{
+    background: #2ecc71;
+}
+.header-main .icon-container .icon{
+    margin: 50%;
+    transform: translate(-50%,-50%);
+}
+/*------------------
+| END: HEADER AREA |
+-----------------*/
+
+
+
+/*----------------------
+| START: FEATURES AREA |
+---------------------*/
+.features{
+    font-family: Raleway;
+    min-height: 338px;
+}
+.features .icon-container{
+    width: 98px;
+    height: 98px;
+    margin-right: 15px;
+    background: #2ecc71;
+    transition: .3s;
+    cursor: pointer;
+}
+.features .icon-container .icon{
+    margin: 50%;
+    transform: translate(-50%,-50%);
+}
+.features .feature-text h1{
+    font-size: 22px;
+}
+.features .feature-text p{
+    color: rgb(65, 65, 65);
+    font-size: 14px;
+}
+/*--------------------
+| END: FEATURES AREA |
+-------------------*/
+
+
+
+/*--------------------------
+| START: GET NOTIFIED AREA |
+-------------------------*/
+.get-notified{
+    min-height: 425px;
+    background: #e3e3e3;
+}
+.get-notified h1{
+    font-size: 22px;
+}
+.get-notified p{
+    color: rgb(65, 65, 65);
+    font-size: 18px;
+}
+.get-notified .input-area{
+    display: flex;
+}
+.get-notified .input-area input{
+    height:50px;
+    width: 300px;
+    font-family: raleway;
+    font-size: 16px;
+    border: 1px solid #cacaca;
+    border-radius: 10px 0 0 10px;
+}
+.get-notified .input-area button{
+    height:50px;
+    font-family: raleway;
+    font-size: 20px;
+    border: 0;
+    margin-left:-1px;
+    border-radius: 0 10px 10px 0;
+    background: #2ecc71;
+    color: #e3e3e3;
+    font-weight: bold;
+}
+.get-notified video{
+    border-radius: 10px;
+}
+/*------------------------
+| END: GET NOTIFIED AREA |
+-----------------------*/
+
+
+
+
+/*--------------------------
+| START: TESTIMONIALS AREA |
+-------------------------*/
+.testimonials .text-italic{
+    font-style: italic;
+}
+.testimonials p{
+    padding: 0 120px;
+    color: rgb(65, 65, 65);
+}
+.testimonials .image-slider{
+    display: flex;
+    overflow: hidden;
+}
+.testimonials .image-slider .icon-container{
+    display:flex;
+    float:left;
+}
+.testimonials .image-slider img{
+    margin-right: 3px;
+    z-index: -1;
+}
+.testimonials .image-slider .hover-card{
+    position: absolute;
+    margin-right: 3px;
+    cursor: pointer;
+    transition: .5s;
+    width:50px;
+    height:50px;
+    background: #2ecc71;
+    opacity:0;
+    z-index: 0;
+}
+.testimonials .image-slider .hover-card:hover{
+    opacity:.5;
+}
+.testimonials .social{
+    margin-left: 50%;
+    transform: translateX(-25%);
+    display: flex;
+}
+.testimonials .social .icon-container{
+    width: 34px;
+    height: 34px;
+    margin-right: 15px;
+    background: #d4d4d4;
+    transition: .3s;
+    cursor: pointer;
+}
+.testimonials .social .icon-container:hover{
+    background: #62d995;
+}
+.testimonials .social .icon-container .icon{
+    margin: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*------------------------
+| END: TESTIMONIALS AREA |
+-----------------------*/
+
+
+
+/*--------------------
+| START: FOOTER AREA |
+-------------------*/
+.footer{
+    background: #e3e3e3;
+    width:100%;
+    padding: 60px 0;
+    overflow: hidden;
+    min-height: 130px;
+}
+.footer .container{
+    display: flex;
+    margin-left:50%;
+    transform: translateX(-26%);
+}
+.footer a{
+    margin: auto 0;
+    font-size: 18px;
+}
+/*------------------
+| END: FOOTER AREA |
+-----------------*/
