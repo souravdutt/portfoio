@@ -1,0 +1,608 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: calibri, raleway;
+}
+
+/*------------------
+| START: MAIN AREA |
+-----------------*/
+.main{
+    width:100%;
+    min-height:120vh;
+    background: black url("../images/main-bg.png") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main .navbar{
+    font-size: 35.02px;
+    color: #d1d5d7;
+    font-family: raleway;
+    font-weight: 700;
+    display:flex
+}
+.main .nav-links{
+    justify-content: flex-end;
+}
+.main .navbar .nav-link{
+    color: #d1d5d7 !important;
+    transition: .2s;
+}
+.main .navbar .nav-link:hover{
+    color: #2a3b40 !important;
+    text-decoration: underline;
+    text-shadow: 0 0 5px #ffffff;
+}
+.main .card{
+    width:758px;
+    height:470px;
+    margin: 80px auto;
+    background: #ffffffdd;
+}
+.main .card-content{
+    margin: auto;
+    text-align: center;
+}
+.main .card .card-text-1{
+    font-family: cookie;
+    font-size: 104.17px;
+    line-height: 50px;
+    color: #2c3a42;
+}
+.main .card .card-text-2{
+    font-family: raleway;
+    font-size: 76.99px;
+    color: #ad6c12;
+    font-weight: 600;
+}
+.main .card .card-button{
+    margin: 0 auto;
+    width: 270px;
+    font-family: raleway;
+    font-size: 38.49px;
+    font-weight: 600;
+    color: #2a3b40;
+    background: #ffffff;
+    padding: 0 20px;
+    border:0;
+    transition: .5s;
+}
+.main .card .card-button:hover{
+    background-color: #2a3b40;
+    color: #d1d5d7;
+}
+/*----------------
+| END: MAIN AREA |
+---------------*/
+
+
+/*---------------------
+| START: GROUP-2 AREA |
+--------------------*/
+.group-2{
+    background: #2a3b40;
+}
+.group-2 .text{
+    color: #ffffff;
+    font-family: raleway;
+}
+.group-2 .heading{
+    font-size: 29.17px;
+    font-weight: bolder;
+}
+.group-2 .para{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 35px;
+}
+.group-2 .image{
+    width: 528px;
+    height: 352px;
+    background: url(../images/group2.png) center no-repeat;
+    background-size: cover;
+}
+/*-------------------
+| END: GROUP-2 AREA |
+------------------*/
+
+
+
+
+/*---------------------
+| START: GROUP-3 AREA |
+--------------------*/
+.group-3{
+    background: #d4d8d9;
+}
+.group-3 .content{
+    color: #2a3b40;
+    font-family: raleway;
+}
+.group-3 .circles{
+    display: flex;
+}
+.group-3 .circle{
+    width: 32px;
+    height: 32px;
+    background: #2a3b40;
+    border-radius: 50%;
+}
+.group-3 .heading{
+    padding: 30px 0 5px 0;
+    font-size: 18.17px;
+    font-weight: 700;
+}
+.group-3 .para{
+    font-weight: 500;
+    font-size: 16px;
+}
+/*-------------------
+| END: GROUP-3 AREA |
+------------------*/
+
+
+/*---------------------
+| START: GROUP-4 AREA |
+--------------------*/
+.group-4{
+    background: #d4d8d9 url(../images/group-4.png) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 120vh;
+}
+.group-4 .content{
+    background: #ffffffdd;
+    color: #2a3b40;
+    font-family: raleway;
+}
+.group-4 .large-1{
+    font-family: cookie;
+    font-size: 77px;
+    line-height: 77px;
+    color: #2c3a42;
+}
+.group-4 .large-2{
+    font-family: raleway;
+    font-size: 47.59px;
+    line-height: 47px;
+    color: #ad6c12;
+    font-weight: 600;
+}
+.group-4 .heading{
+    padding: 20px 0 0 0;
+    font-size: 19px;
+    font-weight: 700;
+}
+.group-4 .para{
+    font-weight: 500;
+    font-size: 16.17px;
+}
+.group-4 .price{
+    font-size: 16.5px;
+    font-weight: 700;
+}
+.group-4 .image1{
+    background: url(../images/icons/gourp-4-1.png) center no-repeat;
+    background-size: cover;
+}
+.group-4 .image2{
+    background: url(../images/icons/gourp-4-2.png) center no-repeat;
+    background-size: cover;
+}
+.group-4 .image3{
+    background: url(../images/icons/gourp-4-3.png) center no-repeat;
+    background-size: cover;
+}
+.group-4 .image4{
+    background: url(../images/icons/gourp-4-4.png) center no-repeat;
+    background-size: cover;
+}
+.group-4 .image5{
+    background: url(../images/icons/gourp-4-5.png) center no-repeat;
+    background-size: cover;
+}
+.group-4 .image6{
+    background: url(../images/icons/gourp-4-6.png) center no-repeat;
+    background-size: cover;
+}
+/*-------------------
+| END: GROUP-4 AREA |
+------------------*/
+
+
+
+
+/*---------------------
+| START: GROUP-5 AREA |
+--------------------*/
+.group-5{
+    background: #d4d8d9;
+    width: 100%;
+}
+.group-5 .heading{
+    color: #2a3b40;
+    padding: 20px 0 0 0;
+    font-size: 29.17px;
+    font-weight: 700;
+}
+.group-5 .para{
+    color: #2a3b40;
+    font-weight: 500;
+    font-size: 16.17px;
+}
+.group-5 .circles{
+    display: flex;
+}
+.group-5 .circle{
+    width: 22px;
+    height: 22px;
+    margin: 0 5px;
+    background: #2a3b40;
+    border-radius: 50%;
+}
+.group-5 .menu-item{
+    color: #2a3b40
+}
+.group-5 .left-img{
+    background: url("../images/icons/group-5-left.png") left no-repeat;
+    background-size:cover;
+}
+.group-5 .right-img{
+    background: url("../images/icons/group-5-right.png") right no-repeat;
+    background-size:cover;
+}
+/*-------------------
+| END: GROUP-5 AREA |
+------------------*/
+
+
+
+
+
+/*---------------------
+| START: GROUP-6 AREA |
+--------------------*/
+.group-6{
+    background: #d4d8d9 url(../images/group-6.png) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 238px 0 0 0;
+    
+}
+.group-6 .content{
+    background: #ffffffdd;
+    color: #2a3b40;
+    font-family: raleway;
+}
+.group-6 .icon{
+    margin: auto;
+    border-radius: 50%;
+    padding: 41px;
+    background: #ffffff;
+}
+.group-6 .icon-1{
+    background: #ffffff url('../images/icons/gourp-6-1.png') center no-repeat;
+}
+.group-6 .icon-2{
+    background: #ffffff url('../images/icons/gourp-6-2.png') center no-repeat;
+}
+.group-6 .icon-3{
+    background: #ffffff url('../images/icons/gourp-6-3.png') center no-repeat;
+}
+.group-6 .icon-4{
+    background: #ffffff url('../images/icons/gourp-6-4.png') center no-repeat;
+}
+.group-6 .icon-5{
+    background: #ffffff url('../images/icons/gourp-6-5.png') center no-repeat;
+}
+.group-6 .icon-6{
+    background: #ffffff url('../images/icons/gourp-6-6.png') center no-repeat;
+}
+.group-6 .large-1{
+    font-family: cookie;
+    font-size: 77px;
+    line-height: 60px;
+    color: #2c3a42;
+}
+.group-6 .large-2{
+    font-family: raleway;
+    font-size: 47px;
+    line-height: 35px;
+    color: #ad6c12;
+    font-weight: 600;
+}
+.group-6 .heading{
+    padding: 10px 0 0 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.group-6 .para{
+    font-weight: 500;
+    font-size: 16.17px;
+}
+.group-6 .price{
+    font-size: 16.5px;
+    font-weight: 700;
+}
+/*-------------------
+| END: GROUP-6 AREA |
+------------------*/
+
+
+
+
+
+
+/*---------------------
+| START: GROUP-7 AREA |
+--------------------*/
+.group-7{
+    background: #d4d8d9 url(../images/group-7.png) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 890px 0 0 0;
+    
+}
+.group-7 .content{
+    padding: 50px 100px;
+    background: #2a3b40;
+    color: #ffffff;
+    font-family: raleway;
+}
+.group-7 .large-1{
+    font-family: cookie;
+    font-size: 77.11px;
+    line-height: 60px;
+}
+.group-7 .col{
+    padding: 0 60px;    
+}
+.group-7 label{
+    font-weight: 700;
+    font-size: 18px;
+}
+.group-7 .form-control, .group-7 .btn{
+    background-color: #2a3b40;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 12px;
+    padding: 7px;
+    width:100%;
+    transition: .5s;
+    letter-spacing: 1px;
+}
+.group-7 .btn:hover{
+    background-color: #ffffff;
+    color: #2a3b40;
+}
+/*-------------------
+| END: GROUP-7 AREA |
+------------------*/
+
+
+
+
+
+
+/*---------------------
+| START: GROUP-8 AREA |
+--------------------*/
+.group-8{
+    background:#e3e3e3 url('../images/group-8.png') center no-repeat;
+    background-size:cover;
+    width:100%;
+    height:920px;
+}
+/*-------------------
+| END: GROUP-8 AREA |
+------------------*/
+
+
+
+
+/*---------------------
+| START: GROUP-9 AREA |
+--------------------*/
+.group-9{
+    background:#d4d8d9;
+    width:100%;
+}
+.group-9 .large-1{
+    font-family: cookie;
+    font-size: 77px;
+    line-height: 60px;
+    color: #2c3a42;
+}
+.group-9 .large-2{
+    font-family: raleway;
+    font-size: 47px;
+    line-height: 35px;
+    color: #ad6c12;
+    font-weight: 600;
+}
+.group-9 .card{
+    border:0;
+    background: none;
+}
+.group-9 .image{
+    height: 300px;
+}
+.group-9 .image-1{
+    background: url('../images/icons/gourp-9-1.png') center no-repeat;
+    background-size: cover;
+}
+.group-9 .image-2{
+    background: url('../images/icons/gourp-9-2.png') center no-repeat;
+    background-size: cover;
+}
+.group-9 .image-3{
+    background: url('../images/icons/gourp-9-3.png') center no-repeat;
+    background-size: cover;
+}
+.group-9 .text{
+    font-family: raleway;
+    color: #727171;
+    background-color: white;
+}
+.group-9 .title{
+    padding: 20px 0 0 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+.group-9 .heading{
+    padding: 14px 0 0 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+.group-9 .para{
+    font-weight: 500;
+    font-size: 15px;
+}
+.group-9 .price{
+    font-size: 16.5px;
+    font-weight: 700;
+}
+.group-9 .read-more{
+    background-color: white;
+}
+.group-9 .read-more a{
+    font-family: raleway;
+    color: #727171;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 5px solid #ff992b;
+    transition: .5s;
+}
+.group-9 .read-more a:hover{
+    color: #383737;
+    border-bottom: 5px solid #57340f;
+}
+/*-------------------
+| END: GROUP-9 AREA |
+------------------*/
+
+
+
+
+/*--------------------
+| START: FOOTER AREA |
+-------------------*/
+.footer{
+    background: #2a3b40;
+    color: #ffffff;
+    width:100%;
+    padding: 60px 0;
+    overflow: hidden;
+    text-align: center;
+}
+.footer .quote{
+    font-family: raleway;
+    font-size: 83.33px;
+    line-height: 40px;
+    font-weight: bolder;
+    letter-spacing: -5px;
+    transform: rotate(180deg);
+}
+.footer .para{
+    font-size: 18px;
+    padding: 0 50px;
+}
+.footer .price{
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer a{
+    background: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+.footer .fb{
+    background: url('../images/icons/fb.png') no-repeat center;
+    background-size: cover;
+}
+.footer .tw{
+    background: url('../images/icons/twitter.png') no-repeat center;
+    background-size: cover;
+}
+.footer .insta{
+    background: url('../images/icons/insta.png') no-repeat center;
+    background-size: cover;
+}
+.footer .pin{
+    background: url('../images/icons/pintrest.png') no-repeat center;
+    background-size: cover;
+}
+.footer .gp{
+    background: url('../images/icons/google+.png') no-repeat center;
+    background-size: cover;
+}
+/*------------------
+| END: FOOTER AREA |
+-----------------*/
+
+
+
+
+/*----------------------
+| START: FOOTER-2 AREA |
+---------------------*/
+.footer-2{
+    background: #d4d8d9;
+    color: #2d2f2a;
+    width:100%;
+    padding: 60px 0;
+    font-family: raleway;
+}
+.footer-2 .title{
+    font-size: 23px;
+    font-weight: bolder;
+}
+.footer-2 .para{
+    font-size: 19px;
+    font-weight: 500;
+}
+.footer-2 .para-bold{
+    font-size: 19px;
+    font-weight: 700;
+}
+.footer .price{
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer a{
+    background: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+.footer .fb{
+    background: url('../images/icons/fb.png') no-repeat center;
+    background-size: cover;
+}
+.footer .tw{
+    background: url('../images/icons/twitter.png') no-repeat center;
+    background-size: cover;
+}
+.footer .insta{
+    background: url('../images/icons/insta.png') no-repeat center;
+    background-size: cover;
+}
+.footer .pin{
+    background: url('../images/icons/pintrest.png') no-repeat center;
+    background-size: cover;
+}
+.footer .gp{
+    background: url('../images/icons/google+.png') no-repeat center;
+    background-size: cover;
+}
+/*--------------------
+| END: FOOTER-2 AREA |
+-------------------*/
