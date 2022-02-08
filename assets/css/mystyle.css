@@ -24,6 +24,14 @@ body::-webkit-scrollbar-thumb{
     box-shadow: 0 0 10px #000000;
     transform: scale3d(1.06, 1.06, 1.06);
 }
+.amgstar_portfolio{
+	background: #424242 url(../../images/amgstar1.jpg) center no-repeat;
+	background-size: cover;
+}
+.amgstar_portfolio:hover, .amgstar_portfolio:active{
+	background: #424242 url(../../images/amgstar.gif) center no-repeat;
+	background-size: cover;
+}
 .lms_proj{
 	background: #424242 url(../../images/lms.jpg) center no-repeat;
 	background-size: cover;
